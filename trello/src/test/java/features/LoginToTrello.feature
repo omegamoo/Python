@@ -1,10 +1,6 @@
 @test
 Feature: This example shows the login functionality of trello
 
-#  Background: Go to URL of Trello
-#    Given User goes to Trello URL
-
-
   Scenario: User signs in with correct password and username
     Given User clicks Login link
     And User types user credentials
