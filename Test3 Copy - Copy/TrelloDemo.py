@@ -4,7 +4,9 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
 
 #Local Chrome Driver
-driver = webdriver.Chrome(r"C:\Users\jinr\PycharmProjects\Test3 Copy - Copy\WebDriver\chromedriver.exe")
+#driver = webdriver.Chrome(r"C:\Users\jinr\PycharmProjects\Test3 Copy - Copy\WebDriver\chromedriver.exe")
+#driver = webdriver.Chrome(r"C:\Users\jimawesome\PycharmProjects\Python\Test3 Copy - Copy\WebDriver\chromedriver")
+driver = webdriver.Chrome(r"/Users/jimawesome/PycharmProjects/Python/Test3 Copy - Copy/WebDriver/chromedriver")
 driver.set_page_load_timeout(10)
 
 #Open Chrome and Navigate to Trello

@@ -1,0 +1,95 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3271749656,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "User signs in with correct password and username",
+        "description": "",
+        "id": "this-example-shows-the-login-functionality-of-trello;user-signs-in-with-correct-password-and-username",
+        "after": [
+          {
+            "result": {
+              "duration": 69885,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 172218416,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks Login link",
+            "match": {
+              "location": "LoginToTrello.user_clicks_Login_link()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1344796688,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User types user credentials",
+            "match": {
+              "location": "LoginToTrello.user_types_user_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82179080,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks login button",
+            "match": {
+              "location": "LoginToTrello.user_clicks_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "This example shows the login functionality of trello",
+    "description": "",
+    "id": "this-example-shows-the-login-functionality-of-trello",
+    "keyword": "Feature",
+    "uri": "/Users/jimawesome/PycharmProjects/Python/trello/src/test/java/features/LoginToTrello.feature",
+    "tags": [
+      {
+        "name": "@test",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
