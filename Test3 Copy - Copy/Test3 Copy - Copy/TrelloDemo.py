@@ -14,6 +14,8 @@ driver.get("https://trello.com/")
 time.sleep(1)
 driver.maximize_window()
 time.sleep(1)
+driver.get_screenshot_as_file("TrelloDemoTrelloLandingPage.png")
+time.sleep(1)
 
 #Login
 driver.find_element_by_xpath("/html/body/header/nav/div[2]/a[1]").click()
@@ -22,7 +24,11 @@ driver.find_element_by_xpath("//*[@id='user']").send_keys('')
 time.sleep(1)
 driver.find_element_by_xpath("//*[@id='password']").send_keys('')
 time.sleep(1)
+driver.get_screenshot_as_file("TrelloDemoTrelloLoginPage.png")
+time.sleep(1)
 driver.find_element_by_xpath("//*[@id='login']").click()
+time.sleep(1)
+driver.get_screenshot_as_file("TrelloDemoTrelloBoard.png")
 time.sleep(1)
 
 #Navigate to Automation
@@ -38,4 +44,5 @@ driver.get_screenshot_as_file("TrelloDemoAutomationTaskCard.png")
 driver.find_element_by_xpath("//*[@id='chrome-container']/div[3]/div/div/a").click()
 time.sleep(1)
 
+#Exit
 driver.quit()
