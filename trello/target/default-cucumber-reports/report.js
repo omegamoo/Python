@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/jimawesome/PycharmProjects/Python/trello/src/test/java/features/LoginToTrello.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/jimawesome/PycharmProjects/Python/trello/src/test/java/features/PersonalBoard.feature");
 formatter.feature({
-  "name": "This example shows the login functionality of trello",
+  "name": "This example shows the interactions in the personal board",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -9,15 +9,10 @@ formatter.feature({
     }
   ]
 });
-formatter.scenario({
-  "name": "User signs in with correct password and username",
+formatter.background({
+  "name": "Login To Trello",
   "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@test"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
@@ -51,6 +46,54 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
+});
+formatter.scenario({
+  "name": "User signed in with correct password and username accessing personal board",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@test"
+    }
+  ]
+});
+formatter.step({
+  "name": "User clicks LifeGoals from the personal boards",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "PersonalBoard.user_clicks_LifeGoals_from_the_personal_boards()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks AddAnotherCardlink",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User types testText",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "PersonalBoard.user_types_testText()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User clicks AddCard button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "PersonalBoard.user_clicks_AddCard_button()"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.after({
   "status": "passed"

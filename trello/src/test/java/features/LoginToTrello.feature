@@ -1,4 +1,4 @@
-@test
+
 Feature: This example shows the login functionality of trello
 
   Scenario: User signs in with correct password and username
