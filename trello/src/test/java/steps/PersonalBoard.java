@@ -1,5 +1,6 @@
 package steps;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.WebDriver;
@@ -26,18 +27,20 @@ public class PersonalBoard {
         BrowserUtilities.clickElement(personalBoardPage.lifeGoalsBoard);
     }
 
-    @Given("User clicks AddAnotherCardLink")
-    public void user_clicks_AddAnotherCard_link() {
-     //   BrowserUtilities.clickElement(personalBoardPage.addAnotherCardLink);
+
+    @And("User clicks addAnotherLink")
+    public void User_clicks_addAnotherLink() {
+        BrowserUtilities.clickElement(personalBoardPage.addAnotherLink);
     }
 
-    @Given("User types testText")
+    @And("User types testText")
     public void user_types_testText() {
-     //   BrowserUtilities.fillInputBox(personalBoardPage.addAnotherBoardInputBox, "test123");
+        BrowserUtilities.fillInputBox(personalBoardPage.testText, "test123");
     }
 
     @Then("User clicks AddCard button")
     public void user_clicks_AddCard_button() {
-     //   BrowserUtilities.clickElement(personalBoardPage.addCardButton);
+        BrowserUtilities.clickElement(personalBoardPage.addButton);
     }
+
 }
